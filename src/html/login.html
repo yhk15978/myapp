@@ -59,9 +59,9 @@
                             <div class="login-title">
                                 密码登录
                             </div>
-                            <form action="" method="post" id="J_Form">
+                            <form action="">
                                 <div id="J_Message" style="display:none;" class="login-msg error">
-                                    <i class="iconfont"></i>
+                                    <i class="iconfont">&#xe658;</i>
                                     <p class="error"></p>
                                 </div>
                                 <!-- 手机号登录 -->
@@ -97,14 +97,13 @@
                                     <a href="#" class="register" target="_blank" tabindex="7">免费注册</a>
 
                                 </div>
-                            </form>
+
                         </div>
                         <!--快速登录开始-->
                         <div class="quick-form">
                             <!--扫码登录开始-->
                             <div class="qrcode-login qrcode-login-error">
                                 <div class="login-title">手机扫码，安全登录</div>
-
                                 <div class="qrcode-mod">
                                     <div class="qrcode-main">
                                         <div class="qrcode-img" style="opacity: 1;"><img src="../images/taobao/login/O1CN01tRHXpI2LKHg0BynBE_!!9673-2-xcode.png"></div>
@@ -148,6 +147,7 @@
                         <!--快速登录结束-->
                     </div>
                 </div>
+                </form>
                 <!--标准登录框结束-->
             </div>
         </div>
@@ -224,5 +224,56 @@
         <!-- #footer END -->
     </div>
 </body>
+<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../js/cookie.js"></script>
+<script>
+    $('form').on("submit", function() {
+        return false;
+    })
+
+    $("#J_SubmitStatic").click(function() {
+
+        if ($("#TPL_username_1").val().length == 0) {
+            if ($("#TPL_password_1").val().length == 0) {
+                $("#J_Message").css({
+                    display: "block"
+                })
+                $("#J_Message .error").html("请输入账户名和密码");
+            } else {
+                $("#J_Message").css({
+                    display: "block"
+                })
+                $("#J_Message .error").html("请填写账户名");
+            }
+        } else {
+            if ($("#TPL_password_1").val().length == 0) {
+                $("#J_Message").css({
+                    display: "block"
+                })
+                $("#J_Message .error").html("请输入密码");
+            } else {
+                $.ajax({
+                    type: "get",
+                    url: "../lib/login.php",
+                    data: {
+                        username: $("#TPL_username_1").val(),
+                        userpsd: $("#TPL_password_1").val()
+                    },
+                    dataType: "json",
+                    success: function(response) {
+                        if (response.has) {
+                            cookie.set('isLogin', true);
+                            cookie.set('username', response.username);
+                            alert("登陆成功，点击跳转首页")
+                            location.href = '../index.html';
+                        }
+                    }
+                });
+            }
+        }
+
+    })
+</script>
+
 
 </html>

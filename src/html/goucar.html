@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/goucar.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font_spx8jn2xu7i/iconfont.css">
+</head>
+
+<body>
+    <div class="site-nav site-nav-status-login" id="J_SiteNav">
+        <div class="site-nav-bd" id="J_SiteNavBd">
+            <ul class="site-nav-bd-l" id="J_SiteNavBdL">
+                <li class="site-nav-menu site-nav-login site-nav-multi-menu J_MultiMenu" id="J_SiteNavLogin">
+                    <div class="site-nav-menu-hd">
+                        <div class="site-nav-sign"> <a href="#" class="h">亲，请登录</a> <a href="#">免费注册</a> </div>
+                        <div class="site-nav-user"> <a href="#" class="site-nav-login-info-nick ">姚恒康</a>
+                            <a href="#" class="site-nav-vip-icon  "></a> <span class="site-nav-arrow"><span class="iconfont site-nav-icon">&#xe661;</span></span>
+                        </div>
+                    </div>
+                    <div class="site-nav-menu-bd" id="J_SiteNavLoginPanel"></div>
+                </li>
+                <li id="J_Tmsg" class="site-nav-tmsg tmsg site-nav-multi-menu J_MultiMenu">
+                    <div class="J_Menu site-nav-menu site-nav-menu-hover">
+                        <div class="site-nav-menu-hd J_Tmsg_Basic tmsg_basic">
+                            <span class="J_Tmsg_Logo tmsg_logo_area" style="zoom:1;">
+                            <span class="J_Tmsg_Logo_Icon tmsg_logo_icon site-nav-icon iconfont">&#xe7bd;</span>
+                            <span class="J_Tmsg_Logo_Text tmsg_logo_text">消息</span>
+                            <span class="J_Tmsg_Logo_Unread tmsg_logo_unread"></span>
+                            </span>
+                            <span class="site-nav-arrow"><span class="iconfont site-nav-icon">&#xe661;</span></span>
+                        </div>
+                        <div class="site-nav-menu-bd">
+                            <div class="J_Tmsg_Panel_Apps tmsg_panel_apps">
+                                <div class="J_Tmsg_Panel_Head tmsg_panel_head">
+                                    <h2 class="J_Tmsg_Panel_Title tmsg_panel_title">未读新消息</h2> <a class="J_Tmsg_Button_ReadAll tmsg_button_read-all" title="忽略所有消息" href="#" style="display: none;">全部设为已读</a></div>
+                                <div class="J_Tmsg_Panel_AppsBody tmsg_panel_body">
+                                    <div class="tmsg_error">
+                                        <p class="tmsg_error_notice"> <img width="23" height="14" src="../images/taobao/T1KLt9FuVaXXXIaF_b-23-14.png" alt=""> <span>没有新消息了</span> <img width="23" height="14" src="../images/taobao/T1xwX6FshtXXXIaF_b-23-14.png" alt=""> </p>
+                                        <div class="tmsg_error_pic tmsg_error_pic_type1"></div> <a class="J_Tmsg_Button_CheckPrevMsgs tmsg_button_check-prev-msgs" href="#">查看之前的消息</a></div>
+                                </div>
+                                <div class="J_Tmsg_Panel_Foot tmsg_panel_foot"> <a class="J_Tmsg_Button_Setting tmsg_button_setting" title="消息设置" href="#">设置</a> <a class="J_Tmsg_Button_Feedback tmsg_button_feedback" title="意见反馈" href="#">反馈</a> <span class="J_Tmsg_Button_CheckAll_Wrap tmsg_button_check-all_wrap">       <a class="tmsg_button_check-all" href="#" >查看全部</a>   </span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="J_Tmsg_Panels tmsg_panels">
+                        <div class="J_Tmsg_Panel_Detail tmsg_panel_detail"></div>
+                        <div class="J_Tmsg_Panel_history tmsg_panel_history"></div>
+                        <div class="J_Tmsg_Panel_Strong tmsg_panel_strong"></div>
+                        <div class="J_Tmsg_Panel_Setting tmsg_panel_setting"></div>
+                    </div>
+                </li>
+                <li class="site-nav-menu site-nav-mobile" id="J_SiteNavMobile">
+                    <div class="site-nav-menu-hd">
+                        <a href="#">
+                            <span>手机逛淘宝</span>
+                        </a>
+                    </div>
+                </li>
+
+            </ul>
+            <ul class="site-nav-bd-r" id="J_SiteNavBdR">
+                <li class="site-nav-menu site-nav-home" id="J_SiteNavHome">
+                    <div class="site-nav-menu-hd">
+                        <a href="../index.html">
+                            <span>淘宝网首页</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="site-nav-menu site-nav-mytaobao site-nav-multi-menu J_MultiMenu  site-nav-menu-hover">
+                    <div class="site-nav-menu-hd">
+                        <a href="#">
+                            <span>我的淘宝</span>
+                        </a>
+                        <span class="site-nav-arrow">
+                            <span class="iconfont site-nav-icon">&#xe661;</span>
+                        </span>
+                    </div>
+                    <div class="site-nav-menu-bd site-nav-menu-list">
+                        <div class="site-nav-menu-bd-panel menu-bd-panel">
+                            <a href="#">已买到的宝贝</a>
+                            <a href="#">我的足迹</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="site-nav-menu site-nav-cart site-nav-menu-empty site-nav-multi-menu J_MultiMenu">
+                    <div class="site-nav-menu-hd">
+                        <a href="#">
+                            <span class="site-nav-icon site-nav-icon-highlight iconfont">&#xe6b9;</span>
+                            <span>购物车</span>
+                            <strong class="h" id="J_MiniCartNum"></strong>
+                        </a>
+                        <span class="site-nav-arrow"> <span class="iconfont site-nav-icon">&#xe661;</span></span>
+                    </div>
+                    <div class="site-nav-menu-bd">
+                        <div class="site-nav-menu-bd-panel menu-bd-panel">
+                        </div>
+                    </div>
+                </li>
+                <li class="site-nav-menu site-nav-favor site-nav-multi-menu J_MultiMenu site-nav-menu-hover" id="J_SiteNavFavor">
+                    <div class="site-nav-menu-hd">
+                        <a href="#">
+                            <span class="site-nav-icon iconfont">&#xe64b;</span>
+                            <span>收藏夹</span>
+                        </a>
+                        <span class="site-nav-arrow"> <span class="iconfont site-nav-icon">&#xe661;</span></span>
+                    </div>
+                    <div class="site-nav-menu-bd site-nav-menu-list">
+                        <div class="site-nav-menu-bd-panel menu-bd-panel">
+                            <a href="#">收藏的宝贝</a>
+                            <a href="#">收藏的店铺</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="site-nav-menu site-nav-catalog" id="J_SiteNavCatalog">
+                    <div class="site-nav-menu-hd">
+                        <a href="#">
+                            <span>商品分类</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="site-nav-pipe">|</li>
+                <li class="site-nav-menu site-nav-seller site-nav-multi-menu J_MultiMenu site-nav-menu-hover" id="J_SiteNavSeller">
+                    <div class="site-nav-menu-hd">
+                        <a href="#">
+                            <span>千牛卖家中心</span>
+                        </a>
+                        <span class="site-nav-arrow"> <span class="iconfont site-nav-icon">&#xe661;</span></span>
+                    </div>
+                    <div class="site-nav-menu-bd site-nav-menu-list">
+                        <div class="site-nav-menu-bd-panel menu-bd-panel">
+                            <a href="#">免费开店</a>
+                            <a href="#">已卖出的宝贝</a>
+                            <a href="#">出售中的宝贝</a>
+                            <a href="#">卖家服务市场</a>
+                            <a href="#">卖家培训中心</a>
+                            <a href="#">体检中心</a>
+                            <a href="#">问商友</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="site-nav-menu site-nav-service site-nav-multi-menu J_MultiMenu site-nav-menu-hover" id="J_SiteNavService">
+                    <div class="site-nav-menu-hd">
+                        <a href="#">
+                            <span>联系客服</span>
+                        </a>
+                        <span class="site-nav-arrow">
+                            <span class="iconfont site-nav-icon">&#xe661;</span>
+                        </span>
+                    </div>
+                    <div class="site-nav-menu-bd site-nav-menu-list">
+                        <div class="site-nav-menu-bd-panel menu-bd-panel">
+                            <a href="#">消费者客服</a>
+                            <a href="#">卖家客服</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="site-nav-menu site-nav-sitemap site-nav-multi-menu J_MultiMenu site-nav-menu-hover" id="J_SiteNavSitemap">
+                    <div class="site-nav-menu-hd">
+                        <a href="#">
+                            <span class="site-nav-icon site-nav-icon-highlight iconfont">&#xe7ad;</span>
+                            <span>网站导航</span>
+                        </a>
+                        <span class="site-nav-arrow"> <span class="iconfont site-nav-icon">&#xe661;</span></span>
+                    </div>
+                    <div class="site-nav-menu-bd">
+                        <div class="site-nav-menu-panel" style="width: 1188px;">
+                            <div class="site-nav-sitemap-mod">
+                                <div class="site-nav-sitemap-mod-wrap">
+                                    <div class="site-nav-sitemap-mod-hd">
+                                        <h4 style="color:#fc4200">主题市场</h4>
+                                    </div>
+                                    <div class="site-nav-sitemap-mod-hd">
+                                        <ul>
+                                            <li style="width:24%">
+                                                <a href="#">女装<i class="hot"></i></a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">家电<i class="new"></i></a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">家居<i class="hot"></i></a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                            <li style="width:24%">
+                                                <a href="#">男装</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site-nav-sitemap-mod">
+                                <div class="site-nav-sitemap-mod-wrap">
+                                    <div class="site-nav-sitemap-mod-hd">
+                                        <h4 style="color:#9fb838">特色市场</h4>
+                                    </div>
+                                    <div class="site-nav-sitemap-mod-hd">
+                                        <ul>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">全球购<i class="hot"></i></a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">极有家<i class="hot"></i></a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">亲宝贝<i class="new"></i></a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">天天特卖<i class="hot"></i></a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">阿里翻译<i class="new"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site-nav-sitemap-mod">
+                                <div class="site-nav-sitemap-mod-wrap">
+                                    <div class="site-nav-sitemap-mod-hd">
+                                        <h4 style="color:#d75696">阿里APP</h4>
+                                    </div>
+                                    <div class="site-nav-sitemap-mod-hd">
+                                        <ul>
+                                            <li style="width:33%"><a href="#">淘宝<i class="hot"></i></a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">全球购</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">极有家<i class="hot"></i></a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">亲宝贝<i class="new"></i></a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">天天特卖<i class="hot"></i></a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">爱逛街</a></li>
+                                            <li style="width:33%"><a href="#">阿里翻译<i class="new"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="site-nav-sitemap-mod">
+                                <div class="site-nav-sitemap-mod-wrap">
+                                    <div class="site-nav-sitemap-mod-hd">
+                                        <h4 style="color:#2e9fdb">精彩推荐集</h4>
+                                    </div>
+                                    <div class="site-nav-sitemap-mod-hd">
+                                        <ul>
+                                            <li style="width:49%"><a href="#">余额宝<i class="hot"></i></a></li>
+                                            <li style="width:49%"><a href="#">余额宝</a></li>
+                                            <li style="width:49%"><a href="#">余额宝</a></li>
+                                            <li style="width:49%"><a href="#">余额宝</a></li>
+                                            <li style="width:49%"><a href="#">余额宝</a></li>
+                                            <li style="width:49%"><a href="#">余额宝</a></li>
+                                            <li style="width:49%"><a href="#">余额宝</a></li>
+                                            <li style="width:49%"><a href="#">余额宝</a></li>
+                                            <li style="width:49%"><a href="#">余额宝</a></li>
+                                            <li style="width:49%"><a href="#">余额宝</a></li>
+                                            <li style="width:49%"><a href="#">淘工作<i class="new"></i></a></li>
+                                            <li style="width:49%"><a href="#">阿里巴巴认证<i class="new"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- site-nav end -->
+    <div id="content">
+        <div id="J_Header" class="header tb-header">
+            <h1 id="logo" class="cart-logo">
+                <a href="../index.html" title="淘宝网 Taobao.com - 阿里巴巴旗下网站">淘宝网<span></span></a>
+            </h1>
+            <div class="search" id="J_Search" role="search">
+                <div class="search-triggers">
+                    <ul class="ks-switchable-nav" id="J_SearchTab">
+                        <li class="J_SearchTab selected">
+                            <a href="">宝贝</a>
+                        </li>
+                        <li class="J_SearchTab" data-searchtype="mall">
+                            <a href="">天猫</a>
+                        </li>
+
+                        <li class="J_SearchTab" data-searchtype="shop">
+                            <a href="">店铺</a>
+                        </li>
+                    </ul>
+                    <s><s></s></s>
+                </div>
+                <div class="search-panel search-hp-panel ks-switchable-content">
+                    <form target="_top" action="#" name="search" id="J_TSearchForm" class="" data-defaultpage="nogo">
+                        <div class="search-button">
+                            <button class="btn-search" type="submit">搜 索</button>
+                        </div>
+                        <div class="search-panel-fields search-hp-fields search-common-panel">
+                            <div class="search-combobox" id="ks-component234">
+                                <div class="search-combobox-input-wrap"><input id="q" name="q" accesskey="s" autofocus="true" autocomplete="off" class="search-combobox-input"></div>
+                            </div>
+                            <i id="J_SearchIcon" style="display: inline;"></i>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="cart-layout-TB">
+            <div id="J_Cart" class="cart">
+                <div id="J_FilterBar" class="cart-filter-bar">
+                    <ul id="J_CartSwitch" class="switch-cart">
+                        <li class="btn-switch-cart switch-cart-0 current"><a href="#" class="J_MakePoint"><em>全部商品</em><span class="number">5</span><span class="pipe"></span></a></li>
+                        <li class="btn-switch-cart switch-cart-2 disabled"><a href="javascript: void(0);" class="J_MakePoint"><em>降价商品</em><span class="number">0</span><span class="pipe"></span></a></li>
+                        <li class="btn-switch-cart switch-cart-4 disabled"><a href="javascript: void(0);" class="J_MakePoint" data-point="tbcart.8.36"><em>库存紧张</em><span class="number">0</span><span class="pipe"></span></a></li>
+                    </ul>
+                    <div class="cart-sum"><span class="pay-text">已选商品（不含运费）</span><strong class="price"><em id="J_SmallTotal"><span class="total-symbol">&nbsp;</span>0.00</em></strong><a id="J_SmallSubmit" class="submit-btn submit-btn-disabled">结&nbsp;算</a></div>
+                    <div class="wrap-line">
+                        <div class="floater" style="width: 123px; left: -1px;"></div>
+                    </div>
+                </div>
+                <div id="J_CartMain" class="cart-main">
+                    <div class="cart-table-th">
+                        <div class="wp">
+                            <div class="th th-chk">
+                                <div id="J_SelectAll1" class="select-all J_SelectAll">
+                                    <div class="cart-checkbox"><input class="J_CheckBoxShop" id="J_SelectAllCbx1" type="checkbox" name="select-all" value="true"><label for="J_SelectAllCbx1">勾选购物车内所有商品</label></div>&nbsp;&nbsp;全选</div>
+                            </div>
+                            <div class="th th-item">
+                                <div class="td-inner">商品信息</div>
+                            </div>
+                            <div class="th th-info">
+                                <div class="td-inner">&nbsp;</div>
+                            </div>
+                            <div class="th th-price">
+                                <div class="td-inner">单价</div>
+                            </div>
+                            <div class="th th-amount">
+                                <div class="td-inner">数量</div>
+                            </div>
+                            <div class="th th-sum">
+                                <div class="td-inner">金额</div>
+                            </div>
+                            <div class="th th-op">
+                                <div class="td-inner">操作</div>
+                            </div>
+                            <div class="th th-vil hidden">
+                                <div class="td-inner">购买客户信息</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="J_OrderList">
+                        <!-- <div class="order-body">
+                            <div class="order-content">
+                                <div class="item-holder">
+                                    <div class="item-body">
+                                        <ul class="item-content clearfix">
+                                            <li class="td td-chk">
+                                                <div class="td-inner">
+                                                    <div class="cart-checkbox "><input class="J_CheckBoxItem" id="J_CheckBox_104205277064" type="checkbox" name="items[]" value="1042052770643"><label for="J_CheckBox_104205277064">勾选商品</label></div>
+                                                </div>
+                                            </li>
+                                            <li class="td td-item">
+                                                <div class="td-inner">
+                                                    <div class="item-pic J_ItemPic img-loaded">
+                                                        <a href="#" target="_blank" class="J_MakePoint J_GoldReport" data-point="tbcart.8.12"><img src="../images/taobao/TB1rdg7KpXXXXX0aXXXXXXXXXXX_!!0-item_pic.jpg_80x80.jpg" class="itempic J_ItemImg"></a>
+                                                    </div>
+                                                    <div class="item-info">
+                                                        <div class="item-basic-info"> <a href="" class="item-title J_GoldReport J_MakePoint">米莱珠宝 戴妃款5A天然坦桑石戒指 18K金彩色宝石 彩宝女珠宝定制</a> </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="td td-info">
+                                                <div class="item-props item-props-can">
+                                                    <p class="sku-line" tabindex="0">戒指手寸：6.75克拉主石</p>
+                                                </div>
+                                            </li>
+                                            <li class="td td-price">
+                                                <div class="td-inner">
+                                                    <div class="item-price price-promo-">
+                                                        <div class="price-content">
+                                                            <div class="price-line"><em class="J_Price price-now" tabindex="0">￥31350.00</em></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="td td-amount">
+                                                <div class="td-inner">
+                                                    <div class="amount-wrapper ">
+                                                        <div class="item-amount "><a href="#" class="J_Minus">-</a><input type="text" value="1" class="text text-amount J_ItemAmount" autocomplete="off"><a href="#" class="J_Plus plus">+</a></div>
+                                                        <div class="amount-msg J_AmountMsg"></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="td td-sum">
+                                                <div class="td-inner"><em tabindex="0" class="J_ItemSum number">￥31350.00</em>
+                                                    <div class="J_ItemLottery"></div>
+                                                </div>
+                                            </li>
+                                            <li class="td td-op">
+                                                <div class="td-inner"><a title="移入收藏夹" class="btn-fav J_Fav J_MakePoint" href="#">移入收藏夹</a><a href="javascript:;" class="J_Del J_MakePoint">删除</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+                <div id="J_FloatBarHolder" class="float-bar-holder">
+                    <div id="J_FloatBar" class="float-bar clearfix default" style="position: static;">
+                        <div class="float-bar-wrapper">
+                            <div id="J_SelectAll2" class="select-all J_SelectAll">
+                                <div class="cart-checkbox"><input class="J_CheckBoxShop" id="J_SelectAllCbx2" type="checkbox" name="select-all" value="true"><label for="J_SelectAllCbx2">勾选购物车内所有商品</label></div>&nbsp;全选</div>
+                            <div class="operations"><a href="#" hidefocus="true" class="J_DeleteSelected">删除</a><a href="#" hidefocus="true" class="J_BatchFav">移入收藏夹</a><a href="#" hidefocus="true" class="J_BatchShare">分享</a></div>
+                            <div class="float-bar-right">
+                                <div id="J_ShowSelectedItems" class="amount-sum"><span class="txt">已选商品</span><em id="J_SelectedItemsCount">0</em><span class="txt">件</span>
+                                    <div class="arrow-box"><span class="selected-items-arrow"></span><span class="arrow"></span></div>
+                                </div>
+
+                                <div class="pipe"></div>
+                                <div class="price-sum"><span class="txt">合计（不含运费）：</span><strong class="price"><em id="J_Total"><span class="total-symbol">&nbsp;</span>0.00</em></strong></div>
+                                <div class="btn-area"><a href="javascript:void(0)" id="J_Go" class="submit-btn submit-btn-disabled"><span>结&nbsp;算</span><b></b></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="server-num">carts2011018021091.unszyun.su121</div>
+    <div class="footer">
+        <div class="footer-hd">
+            <p>
+                <a href="#">阿里巴巴集团</a>
+                <b>|</b>
+                <a href="#">阿里巴巴国际站</a>
+                <b>|</b>
+                <a href="#">阿里巴巴中国站</a>
+                <b>|</b>
+                <a href="#">全球速卖通</a>
+                <b>|</b>
+                <a href="#">淘宝网</a>
+                <b>|</b>
+                <a href="#">天猫</a>
+                <b>|</b>
+                <a href="#">聚划算</a>
+                <b>|</b>
+                <a href="#">一淘</a>
+                <b>|</b>
+                <a href="#">阿里妈妈</a>
+                <b>|</b>
+                <a href="#">飞猪</a>
+                <b>|</b>
+                <a href="#">虾米</a>
+                <b>|</b>
+                <a href="#">阿里云计算</a>
+                <b>|</b>
+                <a href="#">云OS</a>
+                <b>|</b>
+                <a href="#">万网</a>
+                <b>|</b>
+                <a href="#">支付宝</a>
+                <b>|</b>
+                <a href="#/">来往</a>
+            </p>
+        </div>
+        <div class="footer-bd">
+            <p>
+                <a href="#">关于淘宝</a>
+                <a href="#">合作伙伴</a>
+                <a href="#">营销中心</a>
+                <a href="#">廉正举报</a>
+                <a href="#">联系客服</a>
+                <a href="#">开放平台</a>
+                <a href="#">诚征英才</a>
+                <a href="#">联系我们</a>
+                <a href="#">网站地图</a>
+                <a href="#">法律声明</a>
+                <a href="#">隐私权政策</a>
+                <em>© 2019 Taobao.com 版权所有</em>
+            </p>
+            <p>
+                <span>网络文化经营许可证：浙网文[2016]0132-032号</span>
+                <b>|</b>
+                <span>增值电信业务经营许可证：浙B2-20080224-1</span>
+                <b>|</b>
+                <span>信息网络传播视听节目许可证：1109364号</span>
+            </p>
+        </div>
+        <div class="footer-ft">
+            <a href="#">
+                <img width="36" height="36" src="../images/taobao/login/wj.gif">
+            </a>
+            <a href="#" class="mod mod-a"></a>
+            <a href="#" class="mod mod-b"></a>
+            <a href="#"></a>
+            <a href="#" class="mod mod-d"></a>
+            <a href="#" class="mod mod-e"></a>
+        </div>
+        <!-- #footer END -->
+    </div>
+</body>
+<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../js/cookie.js"></script>
+<script>
+    $(function() {
+        $("#J_CartSwitch li:first .number").html($(".order-body").length)
+        var shop = cookie.get("shop")
+
+        if (shop) {
+            shop = JSON.parse(shop);
+
+            var idList = shop.map(elm => elm.id).join();
+
+            $.ajax({
+                type: "get",
+                url: "../lib/gouwucar.php",
+                data: {
+                    "idList": idList
+                },
+                dataType: "json",
+                success: function(response) {
+
+                    var temp = "";
+                    response.forEach(function(elm) {
+
+                        var pic = JSON.parse(elm.pic);
+                        var arr = shop.filter((val) => {
+                            return val.id === elm.id;
+                        })
+
+
+                        temp = `<div class="order-body">
+                            <div class="order-content">
+                                <div class="item-holder">
+                                    <div class="item-body">
+                                        <ul class="item-content clearfix">
+                                            <li class="td td-chk">
+                                                <div class="td-inner">
+                                                    <div class="cart-checkbox "><input class="J_CheckBoxItem" id="J_CheckBox_${elm.id}" type="checkbox" name="items[]" value="10420${elm.id}"><label for="J_CheckBox_${elm.id}">勾选商品</label></div>
+                                                </div>
+                                            </li>
+                                            <li class="td td-item">
+                                                <div class="td-inner">
+                                                    <div class="item-pic J_ItemPic img-loaded">
+                                                        <a href="#" class="J_MakePoint J_GoldReport"><img src="../images/taobao/ku/${pic[0].src}" class="itempic J_ItemImg"></a>
+                                                    </div>
+                                                    <div class="item-info">
+                                                        <div class="item-basic-info"> <a href="" class="item-title J_GoldReport J_MakePoint">${elm.title}</a> </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="td td-info">
+                                                <div class="item-props item-props-can">
+                                                    <p class="sku-line" tabindex="0">${elm.details}</p>
+                                                </div>
+                                            </li>
+                                            <li class="td td-price">
+                                                <div class="td-inner">
+                                                    <div class="item-price price-promo-">
+                                                        <div class="price-content">
+                                                            <div class="price-line"><em class="J_Price price-now" tabindex="0">￥${arr[0].price}.00</em></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="td td-amount">
+                                                <div class="td-inner">
+                                                    <div class="amount-wrapper ">
+                                                        <div class="item-amount "><a href="javascript:;" class="J_Minus">-</a><input type="text" value="${arr[0].num}" class="text text-amount J_ItemAmount" 
+                                                            data-max="${elm.num}"><a href="javascrpt:;" class="J_Plus plus">+</a></div>
+                                                        <div class="amount-msg J_AmountMsg"></div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="td td-sum">
+                                                <div class="td-inner"><em tabindex="0" class="J_ItemSum number">￥${(arr[0].num*arr[0].price).toFixed(2)}</em>
+                                                    <div class="J_ItemLottery"></div>
+                                                </div>
+                                            </li>
+                                            <li class="td td-op">
+                                                <div class="td-inner"><a title="移入收藏夹" class="btn-fav J_Fav J_MakePoint" href="#">移入收藏夹</a><a href="javascript:;" class="J_Del J_MakePoint" data-id="${elm.id}">删除</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`
+                        $("#J_OrderList").append(temp)
+                    })
+                    yem()
+                }
+
+            });
+        }
+
+        function yem() {
+            $(".J_Del").click(function() {
+                let arr = shop.filter((val) => {
+                    return val.id !== $(this).attr("data-id");
+                })
+                $(this).parents(".order-body").remove();
+                $("#J_CartSwitch li:first .number").html($(".order-body").length)
+                if (arr.length != 0) {
+                    arr = JSON.stringify(arr);
+                    cookie.set("shop", arr, 1);
+
+                } else {
+                    cookie.set("shop", arr, -1);
+                }
+            })
+            $("#J_CartSwitch li:first .number").html($(".order-body").length)
+            $(".J_Plus").click(function() {
+                let a = $(this).siblings("input").attr("data-max");
+                let b = $(this).siblings("input").val();
+                if (a - b > 0) {
+                    $(this).siblings("input").val(+b + 1)
+
+                    let prise = $(this).parents(".item-content").find(".J_Price").html().split("￥")[1];
+                    prise = parseFloat(prise)
+                    prise = $(this).siblings("input").val() * prise
+                    $(this).parents(".item-content").find(".J_ItemSum").html("￥" + prise);
+                    if ($(this).parents(".item-body").hasClass("item-selected")) {
+                        let num = $(this).parents(".item-content").find(".J_Price").html().split("￥")[1];
+                        num = parseFloat(num)
+                        let oldnum = 0
+                        if (parseFloat($("#J_Total").text()) == 0) {
+                            oldnum = 0;
+                        } else {
+                            oldnum = parseFloat($("#J_Total").text().split("￥")[1]);
+                        }
+                        num = oldnum + num
+                        $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;￥</span>" + num.toFixed(2))
+                    }
+                }
+
+            })
+            $(".J_Minus").click(function() {
+                if ($(this).siblings("input").val() > 1) {
+                    $(this).siblings("input").val(function(i, elm) {
+                        return +elm - 1
+                    })
+                    let prise = $(this).parents(".item-content").find(".J_Price").html().split("￥")[1];
+                    prise = parseFloat(prise)
+                    prise = $(this).siblings("input").val() * prise
+                    $(this).parents(".item-content").find(".J_ItemSum").html("￥" + prise);
+                    if ($(this).parents(".item-body").hasClass("item-selected")) {
+                        let prise = $(this).parents(".item-content").find(".J_Price").html().split("￥")[1];
+                        prise = parseFloat(prise)
+                        let num = prise;
+                        let oldnum = 0
+                        if (parseFloat($("#J_Total").text()) == 0) {
+                            oldnum = 0;
+                        } else {
+                            oldnum = parseFloat($("#J_Total").text().split("￥")[1]);
+                        }
+                        num = oldnum - num
+                        $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;￥</span>" + num.toFixed(2))
+                    }
+                }
+
+            })
+            $(".J_ItemAmount").on("change", function() {
+                if (!isNaN($(this).val())) {
+                    let prise = $(this).parents(".item-content").find(".J_Price").html().split("￥")[1];
+                    prise = parseFloat(prise)
+                    prise = $(this).val() * prise
+                    $(this).parents(".item-content").find(".J_ItemSum").html("￥" + prise);
+                }
+            })
+            $("#J_SelectAllCbx2,#J_SelectAllCbx1").on("change", function() {
+                var isChecked = $(this).prop("checked");
+                $(":checkbox").prop("checked", isChecked);
+                $(":checkbox:checked").parent().addClass("cart-checkbox-checked")
+                $(":checkbox").not(":checked").parent().removeClass("cart-checkbox-checked")
+                $("#J_SelectedItemsCount").html($(":checkbox:checked").not("#J_SelectAllCbx2,#J_SelectAllCbx1").length)
+                if (isChecked) {
+                    $(":checkbox").not("#J_SelectAllCbx2,#J_SelectAllCbx1").parents(".item-body").addClass("item-selected")
+                    let prise = $(":checkbox").not("#J_SelectAllCbx2,#J_SelectAllCbx1").parents(".item-content").find(".J_ItemSum")
+                    let arr = [];
+                    prise.each(function(i, elm) {
+                        arr.push(parseFloat(elm.innerHTML.split("￥")[1]))
+                    })
+                    let num = arr.reduce(function(prev, next) {
+                        return prev + next;
+                    })
+                    $("#J_Go,#J_SmallSubmit").removeClass("submit-btn-disabled");
+                    $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;￥</span>" + num.toFixed(2))
+                } else {
+                    $(":checkbox").not("#J_SelectAllCbx2,#J_SelectAllCbx1").parents(".item-body").removeClass("item-selected")
+                    $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;</span>0.00");
+                    $("#J_Go,#J_SmallSubmit").addClass("submit-btn-disabled");
+                }
+            })
+            $(":checkbox").not("#J_SelectAllCbx2,#J_SelectAllCbx1").on("change", function() {
+                var allCount = $(":checkbox").not("#J_SelectAllCbx2,#J_SelectAllCbx1").length;
+                var checkedCount = $(":checkbox:checked").not("#J_SelectAllCbx2,#J_SelectAllCbx1").length;
+                var isAllChecked = allCount === checkedCount;
+                $("#J_SelectAllCbx2,#J_SelectAllCbx1").prop("checked", isAllChecked)
+                $(":checkbox:checked").parent().addClass("cart-checkbox-checked")
+                $(":checkbox").not(":checked").parent().removeClass("cart-checkbox-checked")
+                $("#J_SelectedItemsCount").html($(":checkbox:checked").not("#J_SelectAllCbx2,#J_SelectAllCbx1").length);
+                if (checkedCount > 0) {
+                    $("#J_Go,#J_SmallSubmit").removeClass("submit-btn-disabled");
+                } else {
+                    $("#J_Go,#J_SmallSubmit").addClass("submit-btn-disabled");
+                }
+                if ($(this).prop("checked")) {
+                    $(this).parents(".item-body").addClass("item-selected")
+                    let prise = $(this).parents(".item-content").find(".J_ItemSum");
+                    let num = parseFloat(prise.html().split("￥")[1]);
+                    let oldnum = 0
+                    if (parseFloat($("#J_Total").text()) == 0) {
+                        oldnum = 0;
+                    } else {
+                        oldnum = parseFloat($("#J_Total").text().split("￥")[1]);
+                    }
+                    num = num + oldnum
+                    $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;￥</span>" + num.toFixed(2))
+                } else {
+                    $(this).parents(".item-body").removeClass("item-selected")
+                    let prise = $(this).parents(".item-content").find(".J_ItemSum");
+                    let num = parseFloat(prise.html().split("￥")[1]);
+
+                    let oldnum = 0
+                    if (parseFloat($("#J_Total").text()) == 0) {
+                        oldnum = 0;
+                    } else {
+                        oldnum = parseFloat($("#J_Total").text().split("￥")[1]);
+                    }
+                    num = oldnum - num
+                    if (num == 0) {
+                        $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;</span>0.00")
+                    } else {
+                        $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;￥</span>" + num.toFixed(2))
+                    }
+                }
+            })
+        }
+    })
+</script>
+
+</html>

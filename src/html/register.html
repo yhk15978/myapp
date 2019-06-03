@@ -37,7 +37,7 @@
             <ul class="site-nav-bd-r" id="J_SiteNavBdR">
                 <li class="site-nav-menu site-nav-home" id="J_SiteNavHome" data-name="home" data-spm="1581860521">
                     <div class="site-nav-menu-hd">
-                        <a href="#" class="h">
+                        <a href="../index.html" class="h">
                             <span>淘宝网首页</span>
                         </a>
                     </div>
@@ -60,7 +60,7 @@
                 </li>
                 <li class="site-nav-menu site-nav-cart site-nav-menu-empty site-nav-multi-menu J_MultiMenu">
                     <div class="site-nav-menu-hd">
-                        <a href="#">
+                        <a href="../html/goucar.html">
                             <span class="site-nav-icon site-nav-icon-highlight iconfont">&#xe6b9;</span>
                             <span>购物车</span>
                             <strong class="h" id="J_MiniCartNum"></strong>
@@ -170,59 +170,125 @@
         </div>
     </div>
     <div class="content">
-        <form action="#" method="post" id="J_MobileForm">
-            <div class="form-list form-main-list">
-                <div class="form-group">
-                    <div class="form-item">
-                        <span class="form-label" data-phase-id="r_p_mobileNum">手机号</span>
-                        <div class="mobile-text">
-                            <div id="ks-component77" class="tb-select tb-menu-button tb-button" tabindex="0" role="button">
-                                <div id="ks-content-ks-component77" class="tb-select-content tb-select-content tb-menu-button-content tb-button-content"><span class="text" title="中国大陆">中国大陆</span><span class="code">+86</span></div>
-                            </div>
-                            <input autocomplete="off" class="form-text mobile-input" name="mobile" id="J_Mobile" type="text" value="" placeholder="请输入你的手机号码">
+        <div class="form-list form-main-list">
+            <div class="form-group">
+                <div class="form-item">
+                    <span class="form-label" data-phase-id="r_p_mobileNum">手机号</span>
+                    <div class="mobile-text">
+                        <div id="ks-component77" class="tb-select tb-menu-button tb-button" tabindex="0" role="button">
+                            <div id="ks-content-ks-component77" class="tb-select-content tb-select-content tb-menu-button-content tb-button-content"><span class="text" title="中国大陆">中国大陆</span><span class="code">+86</span></div>
                         </div>
-                    </div>
-                    <div class="form-item">
-                        <span class="form-label tsl" data-phase-id="r_p_noCaptcha">
-                            验证</span>
-                        <div id="_umfp" style="width:1px;height:1px;overflow:hidden">
-                            <img src="../images/taobao/res/clear.png">
-                        </div>
-                        <div id="register_no_captcha" class="nc-container">
-                            <div id="nc_1_wrapper" class="nc_wrapper">
-                                <div id="nc_1_n1t" class="nc_scale">
-                                    <div id="nc_1__bg" class="nc_bg"></div>
-                                    <span id="nc_1_n1z" class="nc_iconfont btn_slide"></span>
-                                    <div id="nc_1__scale_text" class="scale_text slidetounlock"><span class="nc-lang-cnt" data-nc-lang="_startTEXT">请按住滑块，拖动到最右边</span></div>
-                                    <div id="nc_1_clickCaptcha" class="clickCaptcha">
-                                        <div class="clickCaptcha_text">
-                                            <b id="nc_1__captcha_text" class="nc_captch_text"></b>
-                                            <i id="nc_1__btn_2" class="nc_iconfont nc_btn_2 btn_refresh"></i>
-                                        </div>
-                                        <div class="clickCaptcha_img"></div>
-                                        <div class="clickCaptcha_btn"></div>
-                                    </div>
-                                </div>
-                                <div id="nc_1__voice" class="nc_voice"></div>
-                            </div>
-                        </div>
-
+                        <input autocomplete="off" class="form-text mobile-input" name="mobile" id="J_Mobile" type="text" value="" placeholder="请输入你的手机号码">
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="form-item form-item-short">
-                        <button type="submit" class="btn btn-large tsl btn-disabled">下一步</button>
-                        <!-- <div class="msg msg-type-error msg-hide"><i class="iconfont">󰅕</i>
+                <div class="form-item">
+                    <span class="form-label tsl" data-phase-id="r_p_noCaptcha">
+                            验证</span>
+                    <div id="_umfp" style="width:1px;height:1px;overflow:hidden">
+                        <img src="../images/taobao/res/clear.png">
+                    </div>
+                    <div id="register_no_captcha" class="nc-container">
+                        <div id="nc_1_wrapper" class="nc_wrapper">
+                            <div id="nc_1_n1t" class="nc_scale">
+                                <div id="nc_1__bg" class="nc_bg"></div>
+                                <span id="nc_1_n1z" class="nc_iconfont btn_slide iconfont">&gt;&gt;</span>
+                                <div id="nc_1__scale_text" class="scale_text slidetounlock"><span class="nc-lang-cnt" data-nc-lang="_startTEXT">请按住滑块，拖动到最右边</span></div>
+                                <div id="nc_1_clickCaptcha" class="clickCaptcha">
+                                    <div class="clickCaptcha_text">
+                                        <b id="nc_1__captcha_text" class="nc_captch_text"></b>
+                                        <i id="nc_1__btn_2" class="nc_iconfont nc_btn_2 btn_refresh">&lt;&lt;</i>
+                                    </div>
+                                    <div class="clickCaptcha_img"></div>
+                                    <div class="clickCaptcha_btn"></div>
+                                </div>
+                            </div>
+                            <div id="nc_1__voice" class="nc_voice"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-item form-item-short">
+                    <button type="submit" class="btn btn-large tsl btn-disabled" disabled="true">下一步</button>
+                    <!-- <div class="msg msg-type-error msg-hide"><i class="iconfont">󰅕</i>
                             <div class="msg-tit"></div>
                             <div class="msg-cnt" aria-live="assertive"></div>
                         </div> -->
+                </div>
+                <div class="form-item f12 tsl">
+                    <a href="#">切换成企业账户注册</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-list form-main-list hide">
+            <div class="form-group">
+                <div class="form-item">
+                    <span class="form-label form-label-b tsl">登录名</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-item">
+                    <span class="form-label form-label-b tsl">请设置登录密码</span>
+                    <span class="tsl">登录时验证，保护账号信息</span>
+                </div>
+                <div class="form-item">
+                    <span class="form-label tsl">登录密码</span>
+                    <input class="form-text" id="J_Password" name="pwd" type="password" placeholder="设置你的登录密码" value="">
+                    <div class="pw-tip" id="J_PwdTip">
+                        <i class="pw-tip-arr"></i>
+                        <div class="pw-tip-bd">
+                            <div class="pw-strength">
+                                <span class="tsl" data-phase-id="r_ui_pwd_strength">强度：</span>
+                                <div class="pw-strength-bar">
+                                    <span class="pw-strength-1"></span>
+                                    <span class="pw-strength-2"></span>
+                                    <span class="pw-strength-3"></span>
+                                    <em></em>
+                                </div>
+                            </div>
+                            <div class="pw-rule">
+                                <div class="pw-rule-item pw-rule-length">
+                                    <i class="iconfont">&#xe6d7;</i><span class="tsl">6~20个字符</span>
+                                </div>
+                                <div class="pw-rule-item pw-rule-legal">
+                                    <i class="iconfont">&#xe6d7;</i><span class="tsl">只能包含字母、数字以及标点符号（除空格）</span>
+                                </div>
+                                <div class="pw-rule-item pw-rule-multi">
+                                    <i class="iconfont">&#xe6d7;</i><span class="tsl">字母、数字和标点符号至少包含2种</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-item f12 tsl">
-                        <a href="#">切换成企业账户注册</a>
+                </div>
+
+                <div class="form-item">
+                    <span class="form-label tsl">密码确认</span>
+                    <input class="form-text" id="J_RePassword" name="confirmPwd" type="password" placeholder="请再次输入你的密码" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-item">
+                    <span class="form-label form-label-b tsl">设置会员名</span>
+                </div>
+                <div class="form-item">
+                    <span class="form-label tsl" data-phase-id="r_p_userName">登录名</span>
+                    <input class="form-text" id="J_Nick" name="nick" autocomplete="off" type="text" placeholder="会员名一旦设置成功，无法修改" value="">
+                    <div class="nick-suggest-container">
+                        <div class="nick-suggest" id="J_NickSuggest"></div>
+                    </div>
+
+                </div>
+                <div class="form-item">
+                    <button type="submit" id="J_BtnInfoForm" class="btn btn-large tsl">提交</button>
+                    <div class="msg tsl msg-type-error" id="J_MsgInfoForm"><i class="iconfont">󰅕</i>
+                        <div class="msg-tit"></div>
+                        <div class="msg-cnt"></div>
                     </div>
                 </div>
             </div>
-        </form>
+
+        </div>
     </div>
     <div class="ue-suggest">
         <img width="18" height="18" alt="注册改进建议" src="../images/taobao/res/T1Pt0FXmJcXXXXXXXX-18-18.png">
@@ -299,6 +365,263 @@
         </div>
         <!-- #footer END -->
     </div>
+    <div class="msg" id="J_MsgPassword" style="position: absolute; left: 799.5px; top: 379px;"><i class="iconfont">󰅕</i>
+        <div class="msg-tit"></div>
+        <div class="msg-cnt">密码设置不符合要求</div>
+    </div>
+    <div class="msg " id="J_MsgRePassword" style="position: absolute; left: 799.5px; top: 436px;"><i class="iconfont">󰅕</i>
+        <div class="msg-tit"></div>
+        <div class="msg-cnt">两次密码输入不一致</div>
+    </div>
+    <div class="msg " id="J_MsgNick" style="position: absolute; left: 799.5px; top: 570px;"><i class="iconfont">󰅕</i>
+        <div class="msg-tit"></div>
+        <div class="msg-cnt">建议输入简体中文易记</div>
+    </div>
 </body>
+<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+    $(function() {
+        var arr = [];
+        $("#J_Mobile").on("blur", function() {
+            $("#J_Mobile~span").remove();
+            if (/^1[34578]\d{9}$/.test($("#J_Mobile").val())) {
+                $.ajax({
+                    type: "get",
+                    url: "../lib/phone.php",
+                    data: {
+                        userphone: $("#J_Mobile").val()
+                    },
+                    success: function(response) {
+                        if (response) {
+                            $("#J_Mobile").after("<span><i class='iconfont' style='color:#7ac23c;font-size: 20px;'>&#xe656;</i></span>");
+                            $("#J_Mobile")[0].dataset.pas = "true";
+                            if ($("#nc_1__scale_text .nc-lang-cnt").attr('data-nc-lang') == "_yesTEXT") {
+                                $("button:contains('下一步')").removeClass("btn-disabled").prop("disabled", false);
+                            } else {
+                                $("button:contains('下一步')").addClass("btn-disabled").prop("disabled", true);
+                            }
+                        } else {
+                            $("#J_Mobile").after("<span style='position:absolute;left:327px;top:0;color:#ff3f13;font-size:12px;white-space:nowrap'><i class='iconfont' style='color:#ff3f13;'>&#xe658;</i>手机号码已存在</span>");
+                            $("#J_Mobile")[0].dataset.pas = "false";
+                            $("button:contains('下一步')").addClass("btn-disabled").prop("disabled", true);
+                        }
+                    }
+                });
+
+
+            } else {
+                $("#J_Mobile").after("<span style='position:absolute;left:327px;top:0;color:#ff3f13;font-size:12px;white-space:nowrap'><i class='iconfont' style='color:#ff3f13;'>&#xe658;</i>手机号码格式不正确，请重新输入</span>");
+
+            }
+
+        })
+
+        $('#nc_1_n1z').on('mousedown', function(ev) {
+            var offsetX = ev.offsetX;
+            var x = $('#nc_1_n1z').offset().left
+
+            document.onmousemove = function(ev) {
+                var l = ev.pageX - offsetX - x
+                if (l < 0) l = 0;
+                if (l > $('#nc_1_n1t').width() - $('#nc_1_n1z').width()) {
+                    l = $('#nc_1_n1t').width() - $('#nc_1_n1z').width();
+                }
+                $('#nc_1_n1z').css({
+                    left: l + "px"
+                })
+                $('#nc_1__bg').css({
+                    width: l + "px"
+                })
+            }
+            document.onmouseup = function() {
+                document.onmousemove = null;
+
+                if ($('#nc_1_n1z').position().left == $('#nc_1_n1t').width() - $('#nc_1_n1z').width()) {
+                    $('#nc_1_n1z').removeClass("btn_slide").addClass("btn_ok").html("&#xe656;");
+                    $("#nc_1__scale_text").addClass("nc-align-center").addClass("scale_text2");
+                    $("#nc_1__scale_text .nc-lang-cnt")[0].dataset.ncLang = "_yesTEXT";
+                    $("#nc_1__scale_text .nc-lang-cnt").html("<b>验证通过</b>");
+                    if ($("#J_Mobile").attr("data-pas") == "true") {
+                        $("button:contains('下一步')").removeClass("btn-disabled").prop("disabled", false);
+                    } else {
+                        $("button:contains('下一步')").addClass("btn-disabled").prop("disabled", true);
+                    }
+
+                    $('#nc_1_n1z').off("mousedown")
+                } else {
+                    $("button:contains('下一步')").addClass("btn-disabled").prop("disabled", true);
+                    $('#nc_1_n1z').animate({
+                        left: 0
+                    })
+                    $('#nc_1__bg').animate({
+                        width: 0
+                    })
+                }
+            }
+        })
+        $("button:contains('下一步')").on("click", function() {
+            arr.push($("#J_Mobile").val())
+            $(".form-main-list").toggleClass("hide");
+            $(".steps-4 ol li").eq(1).addClass("active");
+            $(".form-label-b:contains('登录名')").after(arr[0]);
+        })
+        $("#J_Password").on("focus", function() {
+            $("#J_PwdTip").css("display", "block");
+            $("#J_MsgPassword").removeClass("msg-display-inline");
+            $("#J_Password").on("keyup", function() {
+                if (/^\S+$/.test($("#J_Password").val())) {
+                    $(".pw-rule-legal i").addClass('pw-icon-ok').removeClass('pw-icon-error').html("&#xe645;")
+                } else {
+                    $(".pw-rule-legal i").addClass('pw-icon-error').removeClass('pw-icon-ok').html("&#xe646;")
+                }
+                if (/^\S{6,20}$/.test($("#J_Password").val())) {
+                    $(".pw-rule-length i").addClass('pw-icon-ok').removeClass('pw-icon-error').html("&#xe645;")
+                } else {
+                    $(".pw-rule-length i").addClass('pw-icon-error').removeClass('pw-icon-ok').html("&#xe646;")
+                }
+                if (/^(?![\d]+$)(?![a-zA-Z]+$)(?![^\da-zA-Z]+$).{2,}$/.test($("#J_Password").val())) {
+                    $(".pw-rule-multi i").addClass('pw-icon-ok').removeClass('pw-icon-error').html("&#xe645;")
+                } else {
+                    $(".pw-rule-multi i").addClass('pw-icon-error').removeClass('pw-icon-ok').html("&#xe646;")
+                }
+                if ($("#J_Password").val().length > 0 && $("#J_Password").val().length < 6) {
+                    $(".pw-strength-bar").removeClass("pw-strength-bar-2").addClass("pw-strength-bar-1");
+                    $(".pw-strength-bar em").html("弱")
+                } else if ($("#J_Password").val().length > 5) {
+                    $(".pw-strength-bar").removeClass("pw-strength-bar-1").addClass("pw-strength-bar-2")
+                    $(".pw-strength-bar em").html("中")
+                }
+
+            })
+        })
+
+        function pand1() {
+            $("#J_PwdTip").css("display", "none");
+            $("#J_MsgPassword").addClass("msg-display-inline");
+            if (/^(?![\d]+$)(?![a-zA-Z]+$)(?![^\da-zA-Z]+$).{6,20}$/.test($("#J_Password").val())) {
+                $("#J_MsgPassword").addClass("msg-type-ok").removeClass("msg-type-error");
+                $("#J_MsgPassword .iconfont").html("&#xe656;")
+                $("#J_MsgPassword .msg-cnt").html("强度：<span style='color:#ff7d1b'>中</span>")
+                $("#J_Password").css({
+                    "border-color": "#dedede"
+                })
+                $("#J_Password")[0].dataset.pass = "true";
+            } else {
+                $("#J_MsgPassword").addClass("msg-type-error").removeClass("msg-type-ok")
+                $("#J_MsgPassword .iconfont").html("&#xe658;")
+                $("#J_MsgPassword .msg-cnt").html("密码设置不符合要求");
+                $("#J_Password").css({
+                    "border-color": "#ff3f13"
+                })
+                $("#J_Password")[0].dataset.pass = "false";
+            }
+        }
+        $("#J_Password").on("blur", function() {
+
+            pand1()
+        })
+        $("#J_RePassword").on("focus", function() {
+            $("#J_MsgRePassword").addClass("msg-display-inline").removeClass("msg-type-error msg-type-ok");
+            $("#J_MsgRePassword .iconfont").html("&#xe6e4;")
+            $("#J_MsgRePassword .msg-cnt").html("请再次输入你的密码")
+        })
+
+        function pand2() {
+            $("#J_MsgRePassword").addClass("msg-display-inline")
+            if ($("#J_RePassword").val().length == 0 && $("#J_Password").val().length == 0) {
+                $("#J_MsgRePassword").removeClass("msg-display-inline");
+                return;
+            }
+            if ($("#J_RePassword").val() == $("#J_Password").val()) {
+                $("#J_MsgRePassword").addClass("msg-type-ok").removeClass("msg-type-error");
+                $("#J_MsgRePassword .iconfont").html("&#xe656;")
+                $("#J_MsgRePassword .msg-cnt").html(" ")
+                $("#J_RePassword")[0].dataset.pass = "true";
+            } else {
+                $("#J_MsgRePassword").addClass("msg-type-error").removeClass("msg-type-ok");
+                $("#J_MsgRePassword .iconfont").html("&#xe658;")
+                $("#J_MsgRePassword .msg-cnt").html("两次密码输入不一致")
+                $("#J_RePassword")[0].dataset.pass = "false";
+            }
+        }
+        $("#J_RePassword").on("blur", function() {
+
+            pand2()
+        })
+
+        $("#J_Nick").on("focus", function() {
+            $("#J_MsgNick").addClass("msg-display-inline").removeClass("msg-type-error msg-type-ok");
+            $("#J_MsgNick .iconfont").html("&#xe6e4;")
+            $("#J_MsgNick .msg-cnt").html("建议会员名使用简体中文，方便好记")
+        })
+
+        function pand3() {
+            $("#J_MsgNick").addClass("msg-display-inline")
+            if (/^\S{3,25}$/.test($("#J_Nick").val())) {
+                $.ajax({
+                    type: "get",
+                    url: "../lib/hasname.php",
+                    data: {
+                        username: $("#J_Nick").val()
+                    },
+                    success: function(response) {
+                        if (response) {
+                            $("#J_MsgNick").addClass("msg-type-ok").removeClass("msg-type-error");
+                            $("#J_MsgNick .iconfont").html("&#xe656;")
+                            $("#J_MsgNick .msg-cnt").html("用户名可用")
+                            $("#J_Nick")[0].dataset.pass = "true";
+                        } else {
+                            $("#J_MsgNick").addClass("msg-type-error").removeClass("msg-type-ok");
+                            $("#J_MsgNick .iconfont").html("&#xe658;")
+                            $("#J_MsgNick .msg-cnt").html("用户名已存在")
+                            $("#J_Nick")[0].dataset.pass = "false";
+                        }
+                    }
+                });
+
+            } else {
+                $("#J_MsgNick").addClass("msg-type-error").removeClass("msg-type-ok");
+                $("#J_MsgNick .iconfont").html("&#xe658;")
+                $("#J_MsgNick .msg-cnt").html("3-25个字符，推荐使用中文，请勿包含姓名/身份证/银行卡等隐私信息，一旦设置成功无法修改")
+                if (/^\s+$/.test($("#J_Nick").val())) {
+                    $("#J_MsgNick .msg-cnt").html("该会员名包含了非法字符 ，请重新输入")
+                }
+                $("#J_Nick")[0].dataset.pass = "false";
+            }
+        }
+        $("#J_Nick").on("blur", function() {
+
+            pand3()
+        })
+        $("#J_BtnInfoForm").click(function() {
+            if ($("[data-pass='true']").length == 3) {
+                $.ajax({
+                    type: "get",
+                    url: "../lib/register.php",
+                    data: {
+                        username: $("#J_Nick").val(),
+                        userpsd: $("#J_RePassword").val(),
+                        userphone: arr[0]
+                    },
+                    success: function(response) {
+                        if (response) {
+                            alert("注册成功,点击跳转到登录页面")
+                            location.href = "./login.html"
+                        } else {
+                            alert("注册失败,点击重新注册")
+                            location.reload();
+                        }
+                    }
+                });
+
+            } else {
+                pand1();
+                pand2();
+                pand3();
+            }
+
+        })
+    })
+</script>
 
 </html>

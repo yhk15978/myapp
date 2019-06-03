@@ -54,6 +54,9 @@ a {
   background-color: #fef2f2;
   color: #6C6C6C;
 }
+.login-msg.error .iconfont {
+  color: #f40;
+}
 .login-msg p {
   float: left;
   white-space: normal;
@@ -195,6 +198,16 @@ a {
 }
 .static-form {
   position: relative;
+}
+.static-form .login-msg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.static-form .login-msg .iconfont {
+  padding-right: 10px;
+  float: left;
+  font-size: 16px;
 }
 .static-form .other-login {
   margin-top: 24px;

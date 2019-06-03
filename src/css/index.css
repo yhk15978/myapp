@@ -2,12 +2,151 @@
 #J_SiteNavHome {
   display: none;
 }
+.site-nav-status-login .site-nav-login .site-nav-sign {
+  display: none;
+}
+.site-nav-status-login .site-nav-login .site-nav-menu-hd .site-nav-login-info-nick {
+  display: inline-block;
+  max-width: 98px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.site-nav-status-login .site-nav-login .site-nav-menu-hd .site-nav-vip-icon {
+  margin-top: 12px;
+  width: 18px;
+  height: 12px;
+  background: url(../images/taobao/TB1Z_HcQFXXXXc7apXXXXXXXXXX-26-71.png) 0 0 no-repeat;
+  background-size: 17px auto;
+}
+.tmsg_panel_apps,
+.tmsg_panel_detail,
+.tmsg_panel_history,
+.tmsg_panel_setting {
+  width: 288px;
+  border: 1px solid #EEE;
+  border-top: none;
+  position: absolute;
+  background: #FFF;
+  box-shadow: 1px 1px 2px #ddd;
+  z-index: 10000000000;
+}
+.tmsg_panel_title {
+  font-size: 14px;
+  color: #222;
+}
+.tmsg_error {
+  padding: 0 35px;
+}
+.tmsg_error_pic {
+  width: 218px;
+  height: 140px;
+  margin: auto 0;
+}
+.tmsg_error_pic_type1 {
+  background: url(../images/taobao/T1g2x8FEBcXXc.b8bx-148-124.png) no-repeat center center;
+}
+.tmsg_button_check-prev-msgs {
+  display: block;
+  width: 148px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  background: #FFF0E8;
+  color: #6D6D6D;
+  border: 1px solid #FFE8DE;
+  margin: 0 auto 8px;
+}
+.tmsg_error_notice {
+  text-align: center;
+  font-size: 14px;
+  margin: 30px 0 10px 0;
+}
+.tmsg_button_read-all {
+  width: 12px;
+  height: 12px;
+  background-position: 0 -158px;
+  position: absolute;
+  top: 13px;
+  right: 17px;
+}
+.tmsg_panel_head {
+  height: 37px;
+  line-height: 37px;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #EEE;
+}
+.tmsg_button_feedback,
+.tmsg_button_setting {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 10px;
+}
+.tmsg_button_setting {
+  background-position: 0 -132px;
+  left: 17px;
+}
+.tmsg_button_feedback {
+  background-position: 0 -145px;
+  left: 37px;
+}
+.tmsg_button_check-all_wrap {
+  line-height: 100%;
+  position: absolute;
+  top: 9px;
+  right: 17px;
+}
+.tmsg_panel_foot {
+  height: 32px;
+  border-top: 1px solid #EEE;
+  position: relative;
+}
+.tmsg_app_list_item_tip_fixie-num,
+.tmsg_app_list_item_tip_fixie-num i,
+.tmsg_app_settilg-item_button-edit,
+.tmsg_app_settilg-item_edit,
+.tmsg_app_title_app-name,
+.tmsg_button_close-app,
+.tmsg_button_deploy-app,
+.tmsg_button_feedback,
+.tmsg_button_go-back,
+.tmsg_button_linkout-to-app,
+.tmsg_button_more,
+.tmsg_button_read-all,
+.tmsg_button_setting {
+  background-image: url(../images/taobao/T1uJd2FD8bXXbA0cQR-80-170.png);
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: -200px;
+  overflow: hidden;
+}
 .site-nav {
   z-index: 10000;
   width: 100%;
   background-color: #f5f5f5;
   border-bottom: 1px solid #eee;
   zoom: 1;
+}
+.site-nav .tmsg_logo_area {
+  float: left;
+}
+.site-nav .tmsg {
+  display: inline;
+  float: left;
+  text-align: left;
+  position: relative;
+  z-index: 102400;
+}
+.site-nav .tmsg .site-nav-menu .tmsg_logo_icon {
+  line-height: 0;
+  width: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0;
+  *display: inline;
+  _display: inline-block;
 }
 .site-nav .site-nav-bd {
   margin: 0 auto;
@@ -262,6 +401,50 @@
   display: table;
   clear: both;
 }
+.footer {
+  position: relative;
+  margin: 60px auto 0;
+  padding: 7px 0 9px;
+  border-top: 1px solid #ddd;
+  width: 1200px;
+}
+.footer .footer-hd p {
+  margin-bottom: 8px;
+  line-height: 27px;
+  border-bottom: 1px solid #ddd;
+}
+.footer .footer-bd span,
+.footer .footer-hd span {
+  margin: 0 4px;
+}
+.footer .footer-bd span,
+.footer .footer-hd span,
+.footer .footer-bd em,
+.footer .footer-hd em {
+  float: left;
+  white-space: nowrap;
+  color: #9C9C9C;
+}
+.footer .footer-bd p,
+.footer .footer-hd p {
+  padding-bottom: 8px;
+  overflow: hidden;
+  *zoom: 1;
+}
+.footer .footer-bd b,
+.footer .footer-hd b {
+  float: left;
+  margin: 0 3px;
+  font-weight: 400;
+  color: #ddd;
+}
+.footer .footer-bd a,
+.footer .footer-hd a {
+  float: left;
+  margin: 0 4px;
+  white-space: nowrap;
+  color: #6c6c6c;
+}
 body {
   color: #3C3C3C;
   -webkit-font-smoothing: antialiased;
@@ -271,6 +454,24 @@ body {
   background-color: #FFF;
   padding-top: 24px;
   height: 97px;
+}
+.member-login a {
+  float: left;
+  margin-left: -1px;
+  width: 85px;
+  text-align: center;
+  border-left: 1px solid #FFF;
+}
+.member-login a strong {
+  display: block;
+  font-size: 14px;
+  color: #F40;
+}
+.member-login .member-column-4 a {
+  width: 66px;
+}
+.member-login .member-column-4 a strong {
+  height: 18px;
 }
 .bottom,
 .seat,

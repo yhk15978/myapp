@@ -68,30 +68,6 @@ $(function() {
         $('.shopping-list').append(temp);
     }
     $('.shopping-list li:gt(2)').addClass('second');
-    for (let i = 0; i < 2; i++) {
-        let temp = `  <li>
-                        <a href="javascript:;">
-                            <div class="img-wrapper">
-                                <img src="./images/taobao/O1CN011ImjBWxFKNsoePh_!!0-juitemmedia.jpg_180x180q90.jpg_.webp" alt="">
-                            </div>
-                            <div class="info">
-                                <h4>【到手1799起】亿健Air跑步机</h4>
-                                <p class="title">前1小时到手价1799</p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:19%"></div>
-                                </div>
-                                <div class="desc">
-                                    <span class="percentage">19%</span>
-                                    <span class="letter">已抢27件</span>
-                                </div>
-                                <div class="extra">
-                                    <span class="yan">￥</span>
-                                    <span class="cur">2299</span>
-                                    <span class="price">￥3799.00</span>
-                                </div>
-                            </div>
-                        </a>
-                    </li>`
-        $('.qiang-list').append(temp);
-    }
+
+
 })

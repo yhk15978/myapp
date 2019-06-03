@@ -42,17 +42,45 @@
                 </li>
                 <li class="site-nav-menu site-nav-login" id="J_SiteNavLogin">
                     <div class="site-nav-menu-hd">
-                        <a href="#" target="_top">
-                            <span class="h">亲，请登录</span>
-                        </a>
-                        <a href="#" target="_top">
-                            免费注册
-                        </a>
+                        <div class="site-nav-sign"> <a href="./html/login.html" class="h">亲，请登录</a> <a href="./html/register.html">免费注册</a> </div>
+                        <div class="site-nav-user hide"> <a href="#" class="site-nav-login-info-nick">姚恒康</a>
+                            <a href="#" class="site-nav-vip-icon  "></a> <span class="site-nav-arrow"><span class="iconfont site-nav-icon">&#xe661;</span></span>
+                        </div>
+                    </div>
+                </li>
+                <li id="J_Tmsg" class="site-nav-tmsg  site-nav-multi-menu J_MultiMenu hide">
+                    <div class="J_Menu site-nav-menu site-nav-menu-hover">
+                        <div class="site-nav-menu-hd J_Tmsg_Basic tmsg_basic">
+                            <span class="J_Tmsg_Logo tmsg_logo_area" style="zoom:1;">
+                                <span class="J_Tmsg_Logo_Icon tmsg_logo_icon site-nav-icon iconfont">&#xe7bd;</span>
+                            <span class="J_Tmsg_Logo_Text tmsg_logo_text">消息</span>
+                            <span class="J_Tmsg_Logo_Unread tmsg_logo_unread"></span>
+                            </span>
+                            <span class="site-nav-arrow"><span class="iconfont site-nav-icon">&#xe661;</span></span>
+                        </div>
+                        <div class="site-nav-menu-bd">
+                            <div class="J_Tmsg_Panel_Apps tmsg_panel_apps">
+                                <div class="J_Tmsg_Panel_Head tmsg_panel_head">
+                                    <h2 class="J_Tmsg_Panel_Title tmsg_panel_title">未读新消息</h2> <a class="J_Tmsg_Button_ReadAll tmsg_button_read-all" title="忽略所有消息" href="#" style="display: none;">全部设为已读</a></div>
+                                <div class="J_Tmsg_Panel_AppsBody tmsg_panel_body">
+                                    <div class="tmsg_error">
+                                        <p class="tmsg_error_notice"> <img width="23" height="14" src="./images/taobao/T1KLt9FuVaXXXIaF_b-23-14.png" alt=""> <span>没有新消息了</span> <img width="23" height="14" src="./images/taobao/T1xwX6FshtXXXIaF_b-23-14.png" alt=""> </p>
+                                        <div class="tmsg_error_pic tmsg_error_pic_type1"></div> <a class="J_Tmsg_Button_CheckPrevMsgs tmsg_button_check-prev-msgs" href="#">查看之前的消息</a></div>
+                                </div>
+                                <div class="J_Tmsg_Panel_Foot tmsg_panel_foot"> <a class="J_Tmsg_Button_Setting tmsg_button_setting" title="消息设置" href="#">设置</a> <a class="J_Tmsg_Button_Feedback tmsg_button_feedback" title="意见反馈" href="#">反馈</a> <span class="J_Tmsg_Button_CheckAll_Wrap tmsg_button_check-all_wrap">       <a class="tmsg_button_check-all" href="#" >查看全部</a>   </span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="J_Tmsg_Panels tmsg_panels">
+                        <div class="J_Tmsg_Panel_Detail tmsg_panel_detail"></div>
+                        <div class="J_Tmsg_Panel_history tmsg_panel_history"></div>
+                        <div class="J_Tmsg_Panel_Strong tmsg_panel_strong"></div>
+                        <div class="J_Tmsg_Panel_Setting tmsg_panel_setting"></div>
                     </div>
                 </li>
                 <li class="site-nav-menu site-nav-mobile" id="J_SiteNavMobile">
                     <div class="site-nav-menu-hd">
-                        <a href="//www.taobao.com/m" target="_top">
+                        <a href="#">
                             <span>手机逛淘宝</span>
                         </a>
                     </div>
@@ -62,7 +90,7 @@
             <ul class="site-nav-bd-r" id="J_SiteNavBdR">
                 <li class="site-nav-menu site-nav-home" id="J_SiteNavHome" data-name="home" data-spm="1581860521">
                     <div class="site-nav-menu-hd">
-                        <a href="//www.taobao.com/">
+                        <a href="#">
                             <span>淘宝网首页</span>
                         </a>
                     </div>
@@ -85,7 +113,7 @@
                 </li>
                 <li class="site-nav-menu site-nav-cart site-nav-menu-empty site-nav-multi-menu J_MultiMenu">
                     <div class="site-nav-menu-hd">
-                        <a href="#">
+                        <a href="./html/goucar.html">
                             <span class="site-nav-icon site-nav-icon-highlight iconfont">&#xe6b9;</span>
                             <span>购物车</span>
                             <strong class="h" id="J_MiniCartNum"></strong>
@@ -419,7 +447,7 @@
                                             <span class="tb-ifont iconfont">&#xe665;</span>
 
                                         </div>
-                                        <i class="tb-ifont iconfont">&#xe65c;</i>
+                                        <i class="tb-ifont iconfont J_SearchIcon">&#xe65c;</i>
                                     </div>
                                     <div class="search-imgsearch-message" id="J_UploaderMessage"></div>
                                     <!--[if lt IE 9]>
@@ -675,6 +703,14 @@
                             </div>
                             <div class="tmall-bd tb-loading">
                                 <div>
+                                    <div class="J_Tce mod mod-2 mod-loaded">
+                                        <a href="#">
+                                            <img src="./images/taobao/lunbot/61.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/taobao/lunbot/62.jpg" alt="">
+                                        </a>
+                                    </div>
                                     <div class="J_Tce mod mod-12">
                                         <a href="#">
                                             <img src="./images/taobao/lunbot/1.png" alt="">
@@ -755,6 +791,44 @@
                                         </a>
                                         <a href="#">
                                             <img src="./images/taobao/lunbot/62.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="J_Tce mod mod-12">
+                                        <a href="#">
+                                            <img src="./images/taobao/lunbot/1.png" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/taobao/lunbot/2.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/taobao/lunbot/3.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/taobao/lunbot/4.png" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/taobao/lunbot/5.png" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/taobao/lunbot/6.png" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/taobao/lunbot/7.png" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/taobao/lunbot/8.png" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/taobao/lunbot/9.jpg" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/taobao/lunbot/10.png" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/taobao/lunbot/11.png" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./images/taobao/lunbot/12.png" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -869,11 +943,26 @@
                     </div>
                     <div class="member-ft">
                         <div class="member-logout J_MemberLogout">
-                            <a href="#">登录</a>
-                            <a href="#" class="ml2 tb-bg weight">注册</a>
+                            <a href="./html/login.html">登录</a>
+                            <a href="./html/register.html" class="ml2 tb-bg weight">注册</a>
                             <a href="#" class="ml3 tb-bg weight">开店</a>
                         </div>
-                        <div class="member-login J_MemberLogin" data-spm-ab="3"></div>
+                        <div class="member-login J_MemberLogin hide">
+                            <div class="member-column-4">
+                                <a href="#">
+                                    <strong>0</strong>待收货
+                                </a>
+                                <a href="#">
+                                    <strong>0</strong>待发货
+                                </a>
+                                <a href="#">
+                                    <strong>0</strong>待付款
+                                </a>
+                                <a href="#">
+                                    <strong>2</strong>待评价
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1083,7 +1172,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <div class="layer">
         <div class="layer-inner clearfix">
@@ -1110,7 +1198,7 @@
                         </span>
                     </h3>
                     <ul class="list clearfix qiang-list">
-                        <li>
+                        <!-- <li>
                             <a href="javascript:;">
                                 <div class="img-wrapper">
                                     <img src="./images/taobao/O1CN011ImjBWxFKNsoePh_!!0-juitemmedia.jpg_180x180q90.jpg_.webp" alt="">
@@ -1132,7 +1220,7 @@
                                     </div>
                                 </div>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -1141,15 +1229,271 @@
     </div>
 </body>
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./js/cookie.js"></script>
+<script>
+    $(function() {
+        let index = 0;
+        // let firstCh = $('.tmall-bd>div>.mod').eq(0).clone(true);
+        // let lastCh = $('.tmall-bd>div>.mod').eq(-1).clone(true);
+        // $('.tmall-bd>div').prepend(lastCh);
+        // $('.tmall-bd>div').append(firstCh);
+        let cW = $('.tmall-bd>div>.mod').width();
+        $('.tmall-bd>div').css({
+            'width': cW * $('.tmall-bd>div>.mod').length + 'px',
+            'left': -cW + 'px',
+        })
 
-
-<script src="./js/slider.js"></script>
+        function start(index) {
+            $('.tmall-nav li').removeClass('selected');
+            $('.tmall-nav li').eq(index).addClass('selected');
+            $('.tmall-bd>div').stop(true);
+            $('.tmall-bd>div').animate({
+                'left': -cW * (index + 1)
+            }, function() {
+                $('.tmall-hd i').html(index + 1)
+            })
+        }
+        let timer = setInterval(function() {
+            index++;
+            if (index > $('.tmall-nav li').length - 1) {
+                index = 0;
+                $('.tmall-bd>div').css({
+                    'left': 0 + 'px',
+                })
+            }
+            start(index)
+        }, 2000);
+        $('.tmall').hover(function() {
+            clearInterval(timer)
+        }, function() {
+            timer = setInterval(function() {
+                index++;
+                if (index > $('.tmall-nav li').length - 1) {
+                    index = 0;
+                    $('.tmall-bd>div').css({
+                        'left': 0 + 'px',
+                    })
+                }
+                start(index)
+            }, 2000);
+        })
+        $('.tmall-nav li').on('click', function() {
+            index = $('.tmall-nav li').index(this);
+            start(index)
+        })
+        $('.tmall-ft .prev').on('click', function() {
+            index--;
+            if (index < 0) {
+                index = $('.tmall-nav li').length - 1;
+                $('.tmall-bd>div').css({
+                    'left': -cW * ($('.tmall-nav li').length + 1) + 'px',
+                })
+            }
+            start(index)
+        })
+        $('.tmall-ft .next').on('click', function() {
+            index++;
+            if (index > $('.tmall-nav li').length - 1) {
+                index = 0;
+                $('.tmall-bd>div').css({
+                    'left': 0 + 'px',
+                })
+            }
+            start(index)
+        })
+    })
+</script>
 <script>
     $(function() {
 
-        // $('.tmall').slider();
+        function random(min, max) {
+            return Math.round(Math.random() * (max - min) + min)
+        }
+        var countdw = 0;
+
+        function xhr() {
+            $.ajax({
+                type: "get",
+                url: "./lib/shouye.php",
+                dataType: "json",
+                success: function(response) {
+                    console.log(response)
+                    var arr = [];
+                    $(".qiang-list").html(" ");
+                    for (let i = 0; i < response.length; i++) {
+                        arr[i] = i;
+                    }
+                    for (let i = 0; i < 3; i++) {
+                        var _index = arr.splice(random(0, arr.length - 1), 1);
+
+                        var pic = JSON.parse(response[_index].pic);
+
+                        var temple = ` <li>
+                            <a href="./html/xiangq.html?id=${response[_index].id}">
+                                <div class="img-wrapper">
+                                    <img src="./images/taobao/ku/${pic[0].src}" alt="">
+                                </div>
+                                <div class="info">
+                                    <h4>${response[_index].title}</h4>
+                                    <p class="title">${response[_index].details}</p>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width:19%"></div>
+                                    </div>
+                                    <div class="desc">
+                                        <span class="percentage">19%</span>
+                                        <span class="letter">已抢27件</span>
+                                    </div>
+                                    <div class="extra">
+                                        <span class="yan">￥</span>
+                                        <span class="cur">${response[_index].now_price}</span>
+                                        <span class="price">￥${response[_index].old_price}.00</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>`
+                        $(".qiang-list").append(temple)
+                    }
+                }
+            });
+        }
+        xhr();
+        $("#q").on("keyup", function() {
+            if ($("#q").val().length == 0) {
+                $(".J_SearchIcon").css("display", "block");
+                $("#tbSearchContent").css("display", "block");
+            } else {
+                $(".J_SearchIcon").css("display", "none");
+                $("#tbSearchContent").css("display", "none");
+
+            }
+        })
+        if (cookie.get("isLogin") == "true") {
+            $(".site-nav-sign").addClass("hide")
+            $(".site-nav-user").removeClass("hide");
+            $(".site-nav-user .site-nav-login-info-nick,.J_MemberNick").html(cookie.get("username"));
+            $("#J_Tmsg").removeClass("hide").addClass("tmsg");
+            $(".J_MemberLogout").addClass("hide");
+            $(".J_MemberLogin").removeClass("hide")
+        }
+
+        $('.qiang-hd .switch').click(function() {
+            xhr();
+        })
+        setInterval(function() {
+            var date = new Date();
+            var date1 = null;
+            // var s = count % 60;
+            // var ms = parseInt(count % 3600 / 60);
+            var h = date.getHours();
+            var d = date.getDate();
+            var m = date.getMonth() + 1;
+            var y = date.getFullYear();
+            var ms = date.getMinutes();
+            var s = date.getSeconds();
+            if (0 <= h && h < 2) {
+                date1 = new Date(y + "-" + m + "-" + d + " " + "2:00:00");
+                countdw = parseInt((date1 - date) / 1000);
+                if (h == 0 && ms == 0 && s == 0) {
+                    xhr();
+                }
+            }
+            if (2 <= h && h < 4) {
+                date1 = new Date(y + "-" + m + "-" + d + " " + "4:00:00");
+                countdw = parseInt((date1 - date) / 1000);
+                if (h == 2 && ms == 0 && s == 0) {
+                    xhr();
+                }
+            }
+            if (4 <= h && h < 6) {
+                date1 = new Date(y + "-" + m + "-" + d + " " + "6:00:00");
+                countdw = parseInt((date1 - date) / 1000);
+                if (h == 4 && ms == 0 && s == 0) {
+                    xhr();
+                }
+            }
+            if (6 <= h && h < 8) {
+                date1 = new Date(y + "-" + m + "-" + d + " " + "8:00:00");
+                countdw = parseInt((date1 - date) / 1000);
+                if (h == 6 && ms == 0 && s == 0) {
+                    xhr();
+                }
+            }
+            if (8 <= h && h < 10) {
+                date1 = new Date(y + "-" + m + "-" + d + " " + "10:00:00");
+                countdw = parseInt((date1 - date) / 1000);
+                if (h == 8 && ms == 0 && s == 0) {
+                    xhr();
+                }
+            }
+            if (10 <= h && h < 12) {
+                date1 = new Date(y + "-" + m + "-" + d + " " + "12:00:00");
+                countdw = parseInt((date1 - date) / 1000);
+                if (h == 10 && ms == 0 && s == 0) {
+                    xhr();
+                }
+            }
+            if (12 <= h && h < 14) {
+                date1 = new Date(y + "-" + m + "-" + d + " " + "14:00:00");
+                countdw = parseInt((date1 - date) / 1000);
+                if (h == 12 && ms == 0 && s == 0) {
+                    xhr();
+                }
+            }
+            if (14 <= h && h < 16) {
+                date1 = new Date(y + "-" + m + "-" + d + " " + "16:00:00");
+                countdw = parseInt((date1 - date) / 1000);
+                if (h == 14 && ms == 0 && s == 0) {
+                    xhr();
+                }
+            }
+            if (16 <= h && h < 18) {
+                date1 = new Date(y + "-" + m + "-" + d + " " + "18:00:00");
+                countdw = parseInt((date1 - date) / 1000);
+                if (h == 16 && ms == 0 && s == 0) {
+                    xhr();
+                }
+            }
+            if (18 <= h && h < 20) {
+                date1 = new Date(y + "-" + m + "-" + d + " " + "20:00:00");
+                countdw = parseInt((date1 - date) / 1000);
+                if (h == 18 && ms == 0 && s == 0) {
+                    xhr();
+                }
+            }
+            if (20 <= h && h < 22) {
+                date1 = new Date(y + "-" + m + "-" + d + " " + "22:00:00");
+                countdw = parseInt((date1 - date) / 1000);
+                if (h == 20 && ms == 0 && s == 0) {
+                    xhr();
+                }
+
+            }
+            if (22 <= h && h < 24) {
+                date1 = new Date(y + "-" + m + "-" + d + " " + "24:00:00");
+                countdw = parseInt((date1 - date) / 1000);
+                if (h == 22 && ms == 0 && s == 0) {
+                    xhr();
+                }
 
 
+            }
+            var hour = parseInt(countdw / 3600);
+            var minutes = parseInt(countdw / 60) % 60;
+            var seconds = countdw % 60;
+
+            if (hour < 10) {
+                hour = "0" + hour;
+            }
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+            $(".hour").html(hour);
+            $('.minutes').html(minutes);
+            $('.seconds').html(seconds);
+        }, 1000)
     })
 </script>
 <script src="./js/lunbot.js"></script>
