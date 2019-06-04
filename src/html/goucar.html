@@ -724,6 +724,24 @@
                 let arr = shop.filter((val) => {
                     return val.id !== $(this).attr("data-id");
                 })
+                if ($(this).parents(".item-body").hasClass("item-selected")) {
+                    let prise = $(this).parents(".item-content").find(".J_ItemSum").html().split("￥")[1];
+                    prise = parseFloat(prise)
+                    let num = prise;
+                    let oldnum = 0
+                    if (parseFloat($("#J_Total").text()) == 0) {
+                        oldnum = 0;
+                    } else {
+                        oldnum = parseFloat($("#J_Total").text().split("￥")[1]);
+                    }
+                    num = oldnum - num
+                    if (num == 0) {
+                        $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;</span>0.00")
+                    } else {
+                        $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;￥</span>" + num.toFixed(2))
+                    }
+                }
+
                 $(this).parents(".order-body").remove();
                 $("#J_CartSwitch li:first .number").html($(".order-body").length)
                 if (arr.length != 0) {
@@ -733,6 +751,8 @@
                 } else {
                     cookie.set("shop", arr, -1);
                 }
+                $("#J_SelectedItemsCount").html($(":checkbox:checked").not("#J_SelectAllCbx2,#J_SelectAllCbx1").length)
+
             })
             $("#J_CartSwitch li:first .number").html($(".order-body").length)
             $(".J_Plus").click(function() {
@@ -755,7 +775,11 @@
                             oldnum = parseFloat($("#J_Total").text().split("￥")[1]);
                         }
                         num = oldnum + num
-                        $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;￥</span>" + num.toFixed(2))
+                        if (num == 0) {
+                            $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;</span>0.00")
+                        } else {
+                            $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;￥</span>" + num.toFixed(2))
+                        }
                     }
                 }
 
@@ -780,7 +804,11 @@
                             oldnum = parseFloat($("#J_Total").text().split("￥")[1]);
                         }
                         num = oldnum - num
-                        $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;￥</span>" + num.toFixed(2))
+                        if (num == 0) {
+                            $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;</span>0.00")
+                        } else {
+                            $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;￥</span>" + num.toFixed(2))
+                        }
                     }
                 }
 
@@ -810,7 +838,11 @@
                         return prev + next;
                     })
                     $("#J_Go,#J_SmallSubmit").removeClass("submit-btn-disabled");
-                    $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;￥</span>" + num.toFixed(2))
+                    if (num == 0) {
+                        $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;</span>0.00")
+                    } else {
+                        $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;￥</span>" + num.toFixed(2))
+                    }
                 } else {
                     $(":checkbox").not("#J_SelectAllCbx2,#J_SelectAllCbx1").parents(".item-body").removeClass("item-selected")
                     $("#J_Total,#J_SmallTotal").html("<span class='total-symbol'>&nbsp;</span>0.00");
