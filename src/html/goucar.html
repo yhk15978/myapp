@@ -583,7 +583,7 @@
         </div>
         <div class="footer-bd">
             <p>
-                <a href="#">关于淘宝</a>
+                <a href="./about.html">关于淘宝</a>
                 <a href="#">合作伙伴</a>
                 <a href="#">营销中心</a>
                 <a href="#">廉正举报</a>
@@ -621,6 +621,13 @@
 <script src="../js/cookie.js"></script>
 <script>
     $(function() {
+        var id = location.search.split("=")[1];
+        if (cookie.get("isLogin") == "true") {
+            $(".site-nav-sign").addClass("hide")
+            $(".site-nav-user").removeClass("hide");
+            $(".site-nav-user .site-nav-login-info-nick,.J_MemberNick").html(cookie.get("username"));
+            $("#J_Tmsg").removeClass("hide").addClass("tmsg");
+        }
         $("#J_CartSwitch li:first .number").html($(".order-body").length)
         var shop = cookie.get("shop")
 
@@ -660,10 +667,10 @@
                                             <li class="td td-item">
                                                 <div class="td-inner">
                                                     <div class="item-pic J_ItemPic img-loaded">
-                                                        <a href="#" class="J_MakePoint J_GoldReport"><img src="../images/taobao/ku/${pic[0].src}" class="itempic J_ItemImg"></a>
+                                                        <a href="./xiangq.html?id=${elm.id}" class="J_MakePoint J_GoldReport"><img src="../images/taobao/ku/${pic[0].src}" class="itempic J_ItemImg"></a>
                                                     </div>
                                                     <div class="item-info">
-                                                        <div class="item-basic-info"> <a href="" class="item-title J_GoldReport J_MakePoint">${elm.title}</a> </div>
+                                                        <div class="item-basic-info"> <a href="./xiangq.html?id=${elm.id}" class="item-title J_GoldReport J_MakePoint">${elm.title}</a> </div>
                                                     </div>
                                                 </div>
                                             </li>
@@ -737,7 +744,7 @@
                     let prise = $(this).parents(".item-content").find(".J_Price").html().split("￥")[1];
                     prise = parseFloat(prise)
                     prise = $(this).siblings("input").val() * prise
-                    $(this).parents(".item-content").find(".J_ItemSum").html("￥" + prise);
+                    $(this).parents(".item-content").find(".J_ItemSum").html("￥" + prise.toFixed(2));
                     if ($(this).parents(".item-body").hasClass("item-selected")) {
                         let num = $(this).parents(".item-content").find(".J_Price").html().split("￥")[1];
                         num = parseFloat(num)
@@ -761,7 +768,7 @@
                     let prise = $(this).parents(".item-content").find(".J_Price").html().split("￥")[1];
                     prise = parseFloat(prise)
                     prise = $(this).siblings("input").val() * prise
-                    $(this).parents(".item-content").find(".J_ItemSum").html("￥" + prise);
+                    $(this).parents(".item-content").find(".J_ItemSum").html("￥" + prise.toFixed(2));
                     if ($(this).parents(".item-body").hasClass("item-selected")) {
                         let prise = $(this).parents(".item-content").find(".J_Price").html().split("￥")[1];
                         prise = parseFloat(prise)

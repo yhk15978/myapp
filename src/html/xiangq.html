@@ -854,7 +854,7 @@
         </div>
         <div class="footer-bd">
             <p>
-                <a href="#">关于淘宝</a>
+                <a href="./about.html">关于淘宝</a>
                 <a href="#">合作伙伴</a>
                 <a href="#">营销中心</a>
                 <a href="#">廉正举报</a>
@@ -950,7 +950,7 @@
                 var temple1 = "";
                 pic.forEach(function(elm, i) {
                     console.log(elm);
-                    temple = `<li class="" data-index="0">
+                    temple = `<li class="" >
                                 <div class="tb-pic tb-s50">
                             <a href="#"><img src="../images/taobao/ku/${elm.src}"></a>
                              </div>
@@ -1012,7 +1012,7 @@
             }
         });
         $(".J_Increase").click(function() {
-            if ($("#J_IptAmount").val() < 8) {
+            if ($("#J_IptAmount").val() - $("#J_SpanStock").html() < 0) {
                 $("#J_IptAmount").val(function(i, oVal) {
                     return +oVal + 1;
                 })
